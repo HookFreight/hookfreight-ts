@@ -6,11 +6,11 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hookfreight/hookfreight-ts.git"
+    "url": "https://github.com/HookFreight/hookfreight-ts.git"
   },
-  "homepage": "https://hookfreight.com",
+  "homepage": "https://docs.hookfreight.com",
   "bugs": {
-    "url": "https://github.com/hookfreight/hookfreight-ts/issues"
+    "url": "https://github.com/HookFreight/hookfreight-ts/issues"
   },
   "keywords": [
     "hookfreight",

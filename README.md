@@ -5,7 +5,7 @@ Official TypeScript SDK for **[HookFreight](https://hookfreight.com)** — the w
 Capture, inspect, replay, and reliably deliver webhooks with full visibility.
 
 [![npm](https://img.shields.io/npm/v/hookfreight)](https://www.npmjs.com/package/hookfreight)
-[![License](https://img.shields.io/github/license/hookfreight/hookfreight-ts)](./LICENSE)
+[![License](https://img.shields.io/github/license/HookFreight/hookfreight-ts)](./LICENSE)
 
 ## Installation
 
@@ -225,12 +225,12 @@ const hf = new HookFreight({ apiKey: "hf_sk_..." });
 
 ## Examples
 
-See the [`examples/`](./examples) directory for runnable scripts:
+See the [`examples/`](https://github.com/HookFreight/hookfreight-ts/tree/main/examples) directory for runnable scripts:
 
-- **[basic-usage.ts](./examples/basic-usage.ts)** — Create apps, endpoints, list events
-- **[retry-failed-deliveries.ts](./examples/retry-failed-deliveries.ts)** — Find and retry failed deliveries
-- **[manage-endpoints.ts](./examples/manage-endpoints.ts)** — Pause/resume endpoints in CI/CD
-- **[monitor-queue.ts](./examples/monitor-queue.ts)** — Queue health monitoring for alerting
+- **[basic-usage.ts](https://github.com/HookFreight/hookfreight-ts/blob/main/examples/basic-usage.ts)** — Create apps, endpoints, list events
+- **[retry-failed-deliveries.ts](https://github.com/HookFreight/hookfreight-ts/blob/main/examples/retry-failed-deliveries.ts)** — Find and retry failed deliveries
+- **[manage-endpoints.ts](https://github.com/HookFreight/hookfreight-ts/blob/main/examples/manage-endpoints.ts)** — Pause/resume endpoints in CI/CD
+- **[monitor-queue.ts](https://github.com/HookFreight/hookfreight-ts/blob/main/examples/monitor-queue.ts)** — Queue health monitoring for alerting
 
 Run any example with:
 
@@ -243,7 +243,7 @@ HOOKFREIGHT_API_KEY=hf_sk_... npx tsx examples/basic-usage.ts
 Contributions are welcome! Please open an issue or submit a pull request.
 
 ```bash
-git clone https://github.com/hookfreight/hookfreight-ts.git
+git clone https://github.com/HookFreight/hookfreight-ts.git
 cd hookfreight-ts
 npm install
 npm run build
@@ -252,4 +252,4 @@ npm run typecheck
 
 ## License
 
-[Apache-2.0](./LICENSE)
+[Apache-2.0](https://github.com/HookFreight/hookfreight-ts/blob/main/LICENSE)
