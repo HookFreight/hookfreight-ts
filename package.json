@@ -1,0 +1,58 @@
+{
+  "name": "hookfreight",
+  "version": "0.1.0",
+  "description": "Official TypeScript SDK for HookFreight — webhook management platform",
+  "author": "HookFreight <support@hookfreight.com>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hookfreight/hookfreight-ts.git"
+  },
+  "homepage": "https://hookfreight.com",
+  "bugs": {
+    "url": "https://github.com/hookfreight/hookfreight-ts/issues"
+  },
+  "keywords": [
+    "hookfreight",
+    "webhooks",
+    "webhook",
+    "api",
+    "sdk",
+    "typescript"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  }
+}
