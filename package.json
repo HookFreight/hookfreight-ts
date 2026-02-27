@@ -1,6 +1,6 @@
 {
   "name": "hookfreight",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Official TypeScript SDK for Hookfreight — webhook management platform",
   "author": "Hookfreight <support@hookfreight.com>",
   "license": "Apache-2.0",
