@@ -1,11 +1,11 @@
 /**
- * Basic usage of the HookFreight SDK.
+ * Basic usage of the Hookfreight SDK.
  *
  * Run: npx tsx examples/basic-usage.ts
  */
-import HookFreight from "hookfreight";
+import Hookfreight from "hookfreight";
 
-const hf = new HookFreight({
+const hf = new Hookfreight({
   apiKey: process.env.HOOKFREIGHT_API_KEY,
   // baseUrl: "http://localhost:3030/api/v1", // for self-hosted
 });

@@ -3,9 +3,9 @@
  *
  * Run: npx tsx examples/manage-endpoints.ts
  */
-import HookFreight from "hookfreight";
+import Hookfreight from "hookfreight";
 
-const hf = new HookFreight({
+const hf = new Hookfreight({
   apiKey: process.env.HOOKFREIGHT_API_KEY,
 });
 

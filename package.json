@@ -1,16 +1,16 @@
 {
   "name": "hookfreight",
   "version": "0.1.1",
-  "description": "Official TypeScript SDK for HookFreight — webhook management platform",
-  "author": "HookFreight <support@hookfreight.com>",
+  "description": "Official TypeScript SDK for Hookfreight — webhook management platform",
+  "author": "Hookfreight <support@hookfreight.com>",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HookFreight/hookfreight-ts.git"
+    "url": "https://github.com/Hookfreight/hookfreight-ts.git"
   },
   "homepage": "https://docs.hookfreight.com",
   "bugs": {
-    "url": "https://github.com/HookFreight/hookfreight-ts/issues"
+    "url": "https://github.com/Hookfreight/hookfreight-ts/issues"
   },
   "keywords": [
     "hookfreight",

@@ -1,17 +1,17 @@
 /**
- * Base error class for all HookFreight SDK errors.
+ * Base error class for all Hookfreight SDK errors.
  */
-export class HookFreightError extends Error {
+export class HookfreightError extends Error {
   constructor(message: string) {
     super(message);
-    this.name = "HookFreightError";
+    this.name = "HookfreightError";
   }
 }
 
 /**
  * Thrown when the API returns a non-2xx response.
  */
-export class APIError extends HookFreightError {
+export class APIError extends HookfreightError {
   /** HTTP status code */
   readonly status: number;
 
@@ -85,7 +85,7 @@ export class PermissionError extends APIError {
 /**
  * Thrown when a request times out or a network error occurs.
  */
-export class ConnectionError extends HookFreightError {
+export class ConnectionError extends HookfreightError {
   readonly cause?: Error;
 
   constructor(message: string, cause?: Error) {

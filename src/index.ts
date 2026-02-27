@@ -1,9 +1,9 @@
-export { HookFreight } from "./client.js";
-export { HookFreight as default } from "./client.js";
+export { Hookfreight } from "./client.js";
+export { Hookfreight as default } from "./client.js";
 
 // Errors
 export {
-  HookFreightError,
+  HookfreightError,
   APIError,
   NotFoundError,
   ValidationError,
@@ -14,7 +14,7 @@ export {
 
 // Types
 export type {
-  HookFreightConfig,
+  HookfreightConfig,
   PaginationParams,
   PaginatedResult,
   App,

@@ -3,34 +3,34 @@ import { Apps } from "./resources/apps.js";
 import { Endpoints } from "./resources/endpoints.js";
 import { Events } from "./resources/events.js";
 import { Deliveries } from "./resources/deliveries.js";
-import type { HookFreightConfig } from "./types.js";
+import type { HookfreightConfig } from "./types.js";
 
 const DEFAULT_BASE_URL = "https://api.hookfreight.com/v1";
 const DEFAULT_TIMEOUT = 30_000;
 
 /**
- * HookFreight TypeScript SDK client.
+ * Hookfreight TypeScript SDK client.
  *
- * Works with both HookFreight Cloud (using an API key) and
+ * Works with both Hookfreight Cloud (using an API key) and
  * self-hosted instances (using a custom base URL, no auth required).
  *
- * @example HookFreight Cloud
+ * @example Hookfreight Cloud
  * ```ts
- * import HookFreight from "hookfreight";
+ * import Hookfreight from "hookfreight";
  *
- * const hf = new HookFreight({ apiKey: "hf_sk_..." });
+ * const hf = new Hookfreight({ apiKey: "hf_sk_..." });
  * ```
  *
  * @example Self-hosted
  * ```ts
- * import HookFreight from "hookfreight";
+ * import Hookfreight from "hookfreight";
  *
- * const hf = new HookFreight({
+ * const hf = new Hookfreight({
  *   baseUrl: "http://localhost:3030/api/v1",
  * });
  * ```
  */
-export class HookFreight {
+export class Hookfreight {
   /** Manage applications. */
   readonly apps: Apps;
 
@@ -43,7 +43,7 @@ export class HookFreight {
   /** Track deliveries and manage retries. */
   readonly deliveries: Deliveries;
 
-  constructor(config: HookFreightConfig = {}) {
+  constructor(config: HookfreightConfig = {}) {
     const http = new HttpClient({
       baseUrl: config.baseUrl ?? DEFAULT_BASE_URL,
       apiKey: config.apiKey,

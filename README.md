@@ -1,11 +1,11 @@
 # hookfreight
 
-Official TypeScript SDK for **[HookFreight](https://hookfreight.com)** — the webhook management platform.
+Official TypeScript SDK for **[Hookfreight](https://hookfreight.com)** — the webhook management platform.
 
 Capture, inspect, replay, and reliably deliver webhooks with full visibility.
 
 [![npm](https://img.shields.io/npm/v/hookfreight)](https://www.npmjs.com/package/hookfreight)
-[![License](https://img.shields.io/github/license/HookFreight/hookfreight-ts)](./LICENSE)
+[![License](https://img.shields.io/github/license/Hookfreight/hookfreight-ts)](./LICENSE)
 
 ## Installation
 
@@ -25,12 +25,12 @@ pnpm add hookfreight
 
 ## Quick Start
 
-### HookFreight Cloud
+### Hookfreight Cloud
 
 ```ts
-import HookFreight from "hookfreight";
+import Hookfreight from "hookfreight";
 
-const hf = new HookFreight({ apiKey: "hf_sk_..." });
+const hf = new Hookfreight({ apiKey: "hf_sk_..." });
 
 // List recent deliveries
 const { deliveries } = await hf.deliveries.list({ limit: 10 });
@@ -39,9 +39,9 @@ const { deliveries } = await hf.deliveries.list({ limit: 10 });
 ### Self-Hosted
 
 ```ts
-import HookFreight from "hookfreight";
+import Hookfreight from "hookfreight";
 
-const hf = new HookFreight({
+const hf = new Hookfreight({
   baseUrl: "http://localhost:3030/api/v1",
 });
 ```
@@ -50,7 +50,7 @@ const hf = new HookFreight({
 
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
-| `apiKey` | `string` | — | API key for HookFreight Cloud. Optional for self-hosted. |
+| `apiKey` | `string` | — | API key for Hookfreight Cloud. Optional for self-hosted. |
 | `baseUrl` | `string` | `https://api.hookfreight.com/v1` | Base URL of the API. Override for self-hosted instances. |
 | `timeout` | `number` | `30000` | Request timeout in milliseconds. |
 
@@ -168,7 +168,7 @@ console.log(stats);
 The SDK throws typed errors for different failure modes:
 
 ```ts
-import HookFreight, {
+import Hookfreight, {
   NotFoundError,
   ValidationError,
   AuthenticationError,
@@ -199,15 +199,15 @@ try {
 | `APIError` | Other | Any other API error |
 | `ConnectionError` | — | Network failures, timeouts |
 
-All errors extend `HookFreightError`, so you can catch all SDK errors with a single type:
+All errors extend `HookfreightError`, so you can catch all SDK errors with a single type:
 
 ```ts
-import { HookFreightError } from "hookfreight";
+import { HookfreightError } from "hookfreight";
 
 try {
   await hf.apps.list();
 } catch (error) {
-  if (error instanceof HookFreightError) {
+  if (error instanceof HookfreightError) {
     // Any SDK error
   }
 }
@@ -218,19 +218,19 @@ try {
 The SDK supports both ESM and CommonJS:
 
 ```js
-const { HookFreight } = require("hookfreight");
+const { Hookfreight } = require("hookfreight");
 
-const hf = new HookFreight({ apiKey: "hf_sk_..." });
+const hf = new Hookfreight({ apiKey: "hf_sk_..." });
 ```
 
 ## Examples
 
-See the [`examples/`](https://github.com/HookFreight/hookfreight-ts/tree/main/examples) directory for runnable scripts:
+See the [`examples/`](https://github.com/Hookfreight/hookfreight-ts/tree/main/examples) directory for runnable scripts:
 
-- **[basic-usage.ts](https://github.com/HookFreight/hookfreight-ts/blob/main/examples/basic-usage.ts)** — Create apps, endpoints, list events
-- **[retry-failed-deliveries.ts](https://github.com/HookFreight/hookfreight-ts/blob/main/examples/retry-failed-deliveries.ts)** — Find and retry failed deliveries
-- **[manage-endpoints.ts](https://github.com/HookFreight/hookfreight-ts/blob/main/examples/manage-endpoints.ts)** — Pause/resume endpoints in CI/CD
-- **[monitor-queue.ts](https://github.com/HookFreight/hookfreight-ts/blob/main/examples/monitor-queue.ts)** — Queue health monitoring for alerting
+- **[basic-usage.ts](https://github.com/Hookfreight/hookfreight-ts/blob/main/examples/basic-usage.ts)** — Create apps, endpoints, list events
+- **[retry-failed-deliveries.ts](https://github.com/Hookfreight/hookfreight-ts/blob/main/examples/retry-failed-deliveries.ts)** — Find and retry failed deliveries
+- **[manage-endpoints.ts](https://github.com/Hookfreight/hookfreight-ts/blob/main/examples/manage-endpoints.ts)** — Pause/resume endpoints in CI/CD
+- **[monitor-queue.ts](https://github.com/Hookfreight/hookfreight-ts/blob/main/examples/monitor-queue.ts)** — Queue health monitoring for alerting
 
 Run any example with:
 
@@ -243,7 +243,7 @@ HOOKFREIGHT_API_KEY=hf_sk_... npx tsx examples/basic-usage.ts
 Contributions are welcome! Please open an issue or submit a pull request.
 
 ```bash
-git clone https://github.com/HookFreight/hookfreight-ts.git
+git clone https://github.com/Hookfreight/hookfreight-ts.git
 cd hookfreight-ts
 npm install
 npm run build
@@ -252,4 +252,4 @@ npm run typecheck
 
 ## License
 
-[Apache-2.0](https://github.com/HookFreight/hookfreight-ts/blob/main/LICENSE)
+[Apache-2.0](https://github.com/Hookfreight/hookfreight-ts/blob/main/LICENSE)

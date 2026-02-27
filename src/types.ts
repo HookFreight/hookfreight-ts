@@ -2,12 +2,12 @@
 // Client configuration
 // ---------------------------------------------------------------------------
 
-export interface HookFreightConfig {
-  /** API key for HookFreight Cloud (starts with `hf_sk_`). Optional for self-hosted. */
+export interface HookfreightConfig {
+  /** API key for Hookfreight Cloud (starts with `hf_sk_`). Optional for self-hosted. */
   apiKey?: string;
 
   /**
-   * Base URL of the HookFreight API.
+   * Base URL of the Hookfreight API.
    * @default "https://api.hookfreight.com/v1"
    */
   baseUrl?: string;
